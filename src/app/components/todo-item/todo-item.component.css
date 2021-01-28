@@ -17,3 +17,7 @@
 .is-complete {
   text-decoration: line-through;
 }
+
+.todo-item-container {
+  background: #b5cce5;
+}

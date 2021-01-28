@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 60%;
+  margin: 20px auto;
+  background: #b5cce5;
+}
+
+.main p {
+  background: #b5cce5;
+}
