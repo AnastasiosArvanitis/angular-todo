@@ -1,0 +1,14 @@
+.play-container {
+  background: #a2f8ec;
+  padding: 20px;
+  margin: 30px auto;
+  width: 60%;
+}
+
+.child {
+  padding: 10px;
+  margin: 0 auto;
+  background: #59cbbb;
+  font-size: 1.2em;
+  width: 200px;
+}
