@@ -1,7 +1,20 @@
 <div [ngClass]="setClasses()" class="todo-item-container">
   <p>
-    <input (change)="onToggle(todo)" type="checkbox" />
-    {{ todo.title }} </p>
-  <button (click)="onDelete(todo)" class="del">x</button>
+    <mat-checkbox
+      (change)="onToggle(todo)"
+      color="primary"
+      class="checkbox"
+      labelPosition="after"
+    >
+      </mat-checkbox>{{ todo.title }}
+  </p>
+  <button
+    mat-mini-fab
+    color="warn"
+    (click)="onDelete(todo)"
+    class="del"
+  >
+    <mat-icon>delete</mat-icon>
+  </button>
 </div>
 
