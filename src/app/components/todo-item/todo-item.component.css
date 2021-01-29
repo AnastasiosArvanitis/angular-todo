@@ -1,17 +1,3 @@
-.del {
-  color: #ffffff;
-  border: none;
-  padding: 5px 2px;
-  cursor: pointer;
-  float: right;
-}
-
-
-
-.is-complete {
-  text-decoration: line-through;
-}
-
 .todo-item-container {
   background: #bfe8f3;
   padding: 20px;
@@ -21,7 +7,33 @@
   margin: 0 10px;
 }
 
+.check-label {
+  padding-top: 10px;
+}
+
 ::ng-deep .mat-checkbox-frame {
   border-color: #3ea3c0;
   color: red;
 }
+
+.del {
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.del-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.is-complete {
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+

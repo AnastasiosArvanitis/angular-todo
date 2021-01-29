@@ -1,5 +1,5 @@
-<div [ngClass]="setClasses()" class="todo-item-container">
-  <p>
+<div [ngClass]="setClasses()" class="todo-item-container" fxLayout="row" fxLayoutAlign="space-between center">
+  <p class="check-label">
     <mat-checkbox
       (change)="onToggle(todo)"
       color="primary"
@@ -14,7 +14,7 @@
     (click)="onDelete(todo)"
     class="del"
   >
-    <mat-icon>delete</mat-icon>
+    <mat-icon class="del-icon">delete</mat-icon>
   </button>
 </div>
 
