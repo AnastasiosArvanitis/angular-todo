@@ -16,8 +16,12 @@ import { PlayComponent } from './components/pages/play/play/play.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SearchFilmComponent } from './components/searchFilm/search-film/search-film.component';
 
 
 @NgModule({
@@ -28,7 +32,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HeaderComponent,
     AddTodoComponent,
     AboutComponent,
-    PlayComponent
+    PlayComponent,
+    SearchFilmComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCheckboxModule,
     MatIconModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
