@@ -1,4 +1,7 @@
-<div [ngClass]="setClasses()" class="todo-item-container" fxLayout="row" fxLayoutAlign="space-between center">
+<div [ngClass]="setClasses()"
+     class="todo-item-container"
+     fxLayout="row"
+     fxLayoutAlign="space-between center">
   <p class="check-label">
     <mat-checkbox
       (change)="onToggle(todo)"
