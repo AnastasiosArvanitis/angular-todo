@@ -2,7 +2,22 @@
   padding: 30px;
 }
 
+.film-container h1 {
+  margin-bottom: 30px;
+}
+
+.search-area {
+  margin-bottom: 40px;
+  width: 60%;
+}
+
 .film-description {
   width: 400px;
   padding-left: 20px;
 }
+
+.seperator {
+  display: block;
+  width: 20px;
+}
+

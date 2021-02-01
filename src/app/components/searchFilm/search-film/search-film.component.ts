@@ -4,6 +4,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import { Film } from '../../../models/Film';
 import {FilmService} from '../../../services/film.service';
 
+
 @Component({
   selector: 'app-search-film',
   templateUrl: './search-film.component.html',
@@ -11,7 +12,7 @@ import {FilmService} from '../../../services/film.service';
 })
 export class SearchFilmComponent implements OnInit {
 
-  filmTitle: string = 'Chose a film title please...';
+  filmTitle: string = '...';
   film: Film;
   loading: boolean = false;
   errorMessage: string;
