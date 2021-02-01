@@ -1,0 +1,61 @@
+<div fxLayout="column" fxLayoutAlign="space-between center" class="film-container">
+  <h1>The films app</h1>
+  <p>
+    <label for="search-film">
+      <input
+        id="search-film"
+        type="text"
+        name="filmTitle"
+        [(ngModel)]="filmTitle"
+      >
+    Search film title
+    </label>
+    <button type="button" (click)="getFilms()">Get Film</button>
+  </p>
+
+  <mat-spinner *ngIf="loading"></mat-spinner>
+
+  <div *ngIf="errorMessage" class="alert alert-warning">
+    <strong>Warning!</strong> {{errorMessage | json}}
+  </div>
+
+  <div class="not-found" *ngIf="!filmExists">
+    {{message}}
+  </div>
+
+<mat-card *ngIf="filmExists">
+  <mat-card-header>
+    {{film.Title}}
+  </mat-card-header>
+  <mat-card-subtitle>
+    By: {{film.Director}}
+  </mat-card-subtitle>
+  <mat-card-content>
+    <div fxLayout="row">
+      <div class="film-image">
+        <img src="{{film.Poster}}" alt="{{film.Title}}">
+      </div>
+      <div class="film-description">
+        <p><strong>Year: </strong>{{film.Year}}</p>
+        <p><strong>Released: </strong>{{film.Released}}</p>
+        <p><strong>Runtime: </strong>{{film.Runtime}}</p>
+        <p><strong>Genre: </strong>{{film.Genre}}</p>
+        <p><strong>Writer: </strong>{{film.Writer}}</p>
+        <p><strong>Actors: </strong>{{film.Actors}}</p>
+        <p><strong>Plot: </strong>{{film.Plot}}</p>
+        <p><strong>Language: </strong>{{film.Language}}</p>
+        <p><strong>Country: </strong>{{film.Country}}</p>
+        <p><strong>Awards: </strong>{{film.Awards}}</p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+
+
+  <!--<pre>{{film | json}}</pre>-->
+
+</div>
+
+
+
