@@ -22,6 +22,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SearchFilmComponent } from './components/searchFilm/search-film/search-film.component';
+import { FilmNotFoundComponent } from './components/searchFilm/film-not-found/film-not-found.component';
+import {MatFormFieldModule } from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -33,7 +37,8 @@ import { SearchFilmComponent } from './components/searchFilm/search-film/search-
     AddTodoComponent,
     AboutComponent,
     PlayComponent,
-    SearchFilmComponent
+    SearchFilmComponent,
+    FilmNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,10 @@ import { SearchFilmComponent } from './components/searchFilm/search-film/search-
     FlexLayoutModule,
     MatCardModule,
     MatProgressSpinnerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
